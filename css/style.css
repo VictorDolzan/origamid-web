@@ -1,7 +1,15 @@
+:root {
+  --cor-primaria: #ee2211;
+  --cor-primaria-escura: #990000;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #ffffff;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   display: grid;
   gap: 60px;
   justify-items: center;
@@ -50,16 +58,16 @@ p {
 
 .menu a {
   display: inline-block;
-  background: #ffffff;
+  background: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
-  color: #000000;
+  color: var(--texto);
   text-transform: uppercase;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--fundo-2);
 }
 
 .menu a:hover {
-  border-color: #ee2211;
+  border-color: var(--cor-primaria);
 }
 
 .conteudo {
@@ -69,7 +77,7 @@ p {
 }
 
 .introducao {
-  background: #ffffff;
+  background: var(--fundo-2);
   padding: 40px;
   text-align: right;
   position: relative;
@@ -87,7 +95,7 @@ p {
   content: "";
   width: 60px;
   height: 4px;
-  background: #ee2211;
+  background: var(--cor-primaria);
   position: absolute;
   top: 30px;
   right: -30px;
@@ -99,15 +107,15 @@ p {
 }
 
 .botao {
-  background: #ee2211;
-  color: #ffffff;
+  background: var(--cor-primaria);
+  color: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
 .botao:hover {
-  background-color: #990000;
+  background-color: var(--cor-primaria-escura);
 }
 
 .subtitulo {
@@ -122,7 +130,7 @@ p {
 }
 
 .vantagens {
-  background: #ffffff;
+  background: var(--fundo-2);
   padding: 40px;
 }
 
@@ -135,11 +143,11 @@ p {
 }
 
 .vantagens-item:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 
 .vantagens-item:hover {
-  border-color: #ee2211;
+  border-color: var(--cor-primaria);
 }
 
 .vantagens-item p {
@@ -147,7 +155,7 @@ p {
 }
 
 .rodape {
-  background: #ffffff;
+  background: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 40px;
